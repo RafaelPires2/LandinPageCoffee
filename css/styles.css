@@ -1,6 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
+
 *{
     margin:0px;
     padding:0px;
+    font-family: 'Manrope', sans-serif;
+    
 }  
+
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  
+  }
+  body::before, body::after{
+    content:"";
+    border-radius: 100%;
+    position:absolute;
+    display: block;
+    background: #996DFF;
+    filter: blur(200px);
+    width: 321px;
+    height: 321px;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  body:before {
+    left: -29px;
+    top: 495px;
+  }
+  body:after {
+    left: 1127px;
+    top: -63px;
+  }
+
+  main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color:white;
+    border:1px red  solid;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  
+  header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 920px;
+    margin:7em 0px 5em 0px;
+        
+    
+  }
+
+  header ul li{
+    display: inline-block;
+    margin-inline: 20px;
+    text-align: center;
+      
+      
+  }
+
+  #btncafe{
+    margin-left: 70px;
+    border: 2px #8257E5 solid;
+    padding: 10px 30px;
+    border-radius: 15px;
+  }
+
+  header img{
+    margin-right: 50px;
+       
+  }
+
+  .titulo{
+    font-weight:normal;
+    font-size: 40px;
+    text-align: center;
+        
+  }
+  
+  a{
+    color:white;
+  }
+  
+  a:hover{
+    color:var(--button);
+    transition:0.3s;
+  }
+  #btncafe:hover{
+    background: var(--button);
+    color:white;
+  }
+  span{
+    color: var(--button);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+
+  }
+  #cups{
+    width: 100%;
+    height: 100%;
+  }
+
+  
+
+
